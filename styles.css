@@ -240,7 +240,7 @@ section:nth-child(even) {
  * Experience Section
  */
 .job {
-    background-color: var(--surface-color);
+    background-color: #F5F5DC;
     padding: 2rem;
     margin-bottom: 2rem;
     border-left: 4px solid var(--accent-color);
@@ -491,4 +491,5 @@ footer {
     #home h2 {
         font-size: 1.2rem;
     }
+
 }
