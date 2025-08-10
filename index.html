@@ -157,10 +157,19 @@
 <script>
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-menu a');
 
     navToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
+    });
+
+    // Close the menu on link click
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+        });
     });
 </script>
 </body>
